@@ -12,3 +12,11 @@ if (a%10>a/10)
     }
 System.Console.WriteLine(max);
     
+//Условие ввода
+
+int a;
+do
+{
+    a=Convert.ToInt32(Console.ReadLine());
+}
+while (a<10 || a>99);
