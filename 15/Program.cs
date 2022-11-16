@@ -9,3 +9,16 @@ else
 {
 System.Console.WriteLine("NO");
 }
+
+// Вариант 2
+if (a>99)
+{
+    while (a>1000)
+    {
+        a=a/10;
+    }
+    Console.WriteLine(a%10)
+else
+{
+    Console.WriteLine("NO");
+}
