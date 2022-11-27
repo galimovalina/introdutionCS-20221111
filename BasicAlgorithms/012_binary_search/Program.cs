@@ -17,23 +17,24 @@ void Print(int[] a)
 
 int BinSearch(int[] a, int find)
 {
-    int i;;
-    int left=0;
-    int right=a.Length-1;
-    i=left+(right-left)/2;
-    while(a[i]!=find && left<right)
+    int i;
+    int left = 0;
+    int right = a.Length - 1;
+    i = left + (right - left) / 2;
+    while (a[i] != find && left < right)
     {
-        if (find>a[i])
-        left=i;
-        else right=i;
-        i=left+(right-left)/2;
+        if (find > a[i])
+            left = i;
+        else 
+           right = i;
+        i = left + (right - left) / 2;
     }
-    if (a[i]!=find) return -1;
+    if (a[i] != find) return -1;
     else
-    return i;
+        return i;
 }
+
 
 int[] m = RandomIntArray(10, 1, 10);
 Print(m);
-m[4]=2;
-System.Console.WriteLine("\n"+BinSearch(m,2));
+System.Console.WriteLine("\n" + BinSearch(m, find: 8));
