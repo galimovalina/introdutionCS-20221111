@@ -50,7 +50,6 @@ void Sort2DArray(int [,] a)
 }
 
 
-//int[,] a = new int[n, m];
 int[,] a = Random2DArray(3, 5);
 int find = 20;
 a[2, 2] = find;
