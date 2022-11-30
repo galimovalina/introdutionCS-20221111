@@ -1,7 +1,7 @@
 ﻿// 61. Показать двумерный массив размером m×n заполненный вещественными случайными числами
 
 
-double[,] Random2DArray(int n, int m, int min = 1, int max = 10)
+double[,] Random2DArray(int n, int m, int min = 1, int max = 100)
 {
     double[,] a = new double[n, m];
     Random random = new Random();
